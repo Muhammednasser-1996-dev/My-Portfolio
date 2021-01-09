@@ -1,0 +1,32 @@
+.services{
+    margin-top:  -180px; 
+}
+.services-header h2{
+    text-transform: capitalize;
+    position: relative;
+   letter-spacing: 5px;
+   margin-left: 15px;
+}
+.services-header h2::before{
+    content:'';
+    background-color: #008EC7;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: -15px
+}
+.service-body i{
+    font-size: 30px;
+    margin: 25px;
+    color: #008ec7;
+}
+.service-body h6{
+    color: #7a7777;
+}
+@media screen and (max-width:900px){
+    .services{
+      margin-top: 100px !important;
+    }
+}

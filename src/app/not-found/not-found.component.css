@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.container {
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.container{
+    margin-top: -150px;
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        width: 70%;
+    }
+    .container {
+        padding: 70px 10px 10px 10px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+}

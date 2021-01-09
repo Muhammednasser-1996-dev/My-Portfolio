@@ -1,0 +1,93 @@
+.contact{
+    margin-top:  -180px; 
+  }
+.contact img{
+    position: relative;
+    z-index: -1;
+}
+.icon{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+.icon i{
+  line-height: 45px;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+.icon:hover i{
+  transform: scale(1.1);
+  color: #f1f1f1;
+}
+.icon::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.icon:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+  .header-about{
+    padding: 45px;
+  }
+  .head-about h2{
+    text-transform: capitalize;
+    position: relative;
+   letter-spacing: 5px;
+   margin-left: 15px;
+  }
+  .head-about h2::before{
+    content:'';
+    background-color: #008EC7;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: -15px
+  }
+  .head-about p{
+    font-size: 18px;
+    color: #7a7777;
+    line-height: 35px;
+  }
+  .table tr td{
+    font-size: 18px;
+    color: #7a7777;
+    text-transform: capitalize;
+    padding-top: 20px;
+  }
+  .table tr td i{
+    color: #3498db;
+    padding-right: 10px;
+  }
+  @media screen and (max-width:900px){
+    .contact{
+      margin-top: 100px;
+    }
+}

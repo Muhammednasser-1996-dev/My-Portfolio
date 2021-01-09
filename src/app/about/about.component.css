@@ -1,0 +1,42 @@
+.about{
+    margin-top:  -180px; 
+  }
+  .header-about{
+    padding: 45px;
+  }
+  .head-about h2{
+    text-transform: capitalize;
+    position: relative;
+   letter-spacing: 5px;
+   margin-left: 15px;
+  }
+  .head-about h2::before{
+    content:'';
+    background-color: #008EC7;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: -15px
+  }
+  .head-about p{
+    font-size: 18px;
+    color: #7a7777;
+    line-height: 35px;
+  }
+  .table tr td{
+    font-size: 18px;
+    color: #7a7777;
+    text-transform: capitalize;
+    padding-top: 20px;
+  }
+  .table tr td i{
+    color: #3498db;
+    padding-right: 10px;
+  }
+  @media screen and (max-width:900px){
+    .about{
+      margin-top: 100px;
+    }
+}
